@@ -1,0 +1,22 @@
+package TacePao.Exercises;
+
+public class CircleArea {
+	static int r;
+	static double pi = Math.PI;
+
+	public static void main(String[] args) {
+		r = 10;
+		
+		calculateArea(r);
+
+	}
+
+	private static void calculateArea(int r) {
+		
+		
+		double area = Math.pow(r, 2) * pi;
+		
+		System.out.println(area);
+	}
+
+}

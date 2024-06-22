@@ -1,0 +1,11 @@
+package TacePao.Exercises;
+
+public class Cirlce {
+	private int radius;
+	private final double pi = Math.PI;
+	
+	public Circle(int radius) {
+		this.radius = radius;
+	}
+
+}

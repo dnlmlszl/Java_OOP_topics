@@ -1,0 +1,16 @@
+package TacePao.Exercises;
+
+public class CircleArea {
+	
+
+	public static void main(String[] args) {
+		Circle kor = new Circle(10);
+		
+		double area = kor.calculateArea();
+		System.out.printf("Circle area: %.2f\n", area);
+
+	}
+
+	
+
+}

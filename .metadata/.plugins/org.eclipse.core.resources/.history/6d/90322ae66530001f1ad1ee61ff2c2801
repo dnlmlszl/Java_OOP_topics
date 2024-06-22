@@ -1,0 +1,21 @@
+package TacePao.Exercises;
+
+public class Circle {
+	private int radius;
+	private final double pi = Math.PI;
+	
+	public Circle(int radius) {
+		this.radius = radius;
+	}
+	
+	public double calculateArea() {
+		return Math.pow(this.radius, 2);
+	}
+	public int getRadius() {
+		return radius;
+	}
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
+
+}
