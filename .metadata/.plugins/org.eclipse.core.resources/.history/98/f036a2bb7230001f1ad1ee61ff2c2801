@@ -1,0 +1,17 @@
+package TacePao.Practise;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Dock dock = new Dock("Dock" , "Red");
+        Pen pen = new Pen("Pen", "Blue", "Gel");
+        
+
+        System.out.println(dock);
+        System.out.println(pen);
+        
+
+	}
+
+}

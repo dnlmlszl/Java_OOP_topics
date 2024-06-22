@@ -1,0 +1,23 @@
+package TacePao.Practise;
+
+public class OfficeTool {
+	private String color;
+	
+	public OfficeTool(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("This office tool has a color of %s", color);
+    }
+
+}

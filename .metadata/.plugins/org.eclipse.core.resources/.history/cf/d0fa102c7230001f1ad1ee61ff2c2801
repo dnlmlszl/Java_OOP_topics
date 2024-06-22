@@ -1,0 +1,15 @@
+package TacePao.Practise;
+
+public class Dock extends OfficeTool{
+	
+	public Dock(String color, String name) {
+		super(color, name);
+	}
+	
+	@Override
+    public String toString() {
+        return String.format("This dock has a color of %s", getColor());
+    }
+	
+		
+}

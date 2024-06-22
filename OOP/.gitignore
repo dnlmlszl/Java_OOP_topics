@@ -1,0 +1,30 @@
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# Ignore build directories
+bin/
+build/
+target/
+
+# Maven specific files
+log/
+logs/
+tmp/
+temp/
+*.log
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore other files
+*.war
+*.ear
+*.jar
+*.class
