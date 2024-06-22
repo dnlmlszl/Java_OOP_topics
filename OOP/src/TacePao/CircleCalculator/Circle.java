@@ -1,31 +1,23 @@
 package TacePao.CircleCalculator;
 
-public class Circle {
-	private int radius;
-	private final double pi = Math.PI;
-	
-	public Circle(int radius) {
-		this.radius = radius;
-	}
-	
-	public double calculateArea() {
-		return Math.pow(this.radius, 2) * pi;
-	}
-	
-	public double calculatePerimeter() {
-		return this.radius * pi * 2;
-	}
-	
-	public int getRadius() {
-		return radius;
-	}
-	
-	public void setRadius(int radius) {
-		this.radius = radius;
-	}
-	
-	public String toString() {
-		return String.format("Circle with radius: %d, area: %.2f, perimeter: %.2f", radius, calculateArea(), calculatePerimeter());
-	}
+public class Circle extends Shape {
 
+    public Circle(String name, int radius) {
+        super(name, radius);
+    }
+
+    @Override
+    public double calculateArea() {
+        return Math.pow(radius, 2) * pi;
+    }
+
+    @Override
+    public double calculatePerimeter() {
+        return radius * pi * 2;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s has an area of %.2f and a perimeter of %.2f", super.toString(), calculateArea(), calculatePerimeter());
+    }
 }
