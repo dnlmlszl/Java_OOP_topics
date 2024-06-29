@@ -45,6 +45,7 @@ public class UserInterface {
 			if (winner) {
                 System.out.println("The correct number was: " + target);
                 System.out.println("Game over!");
+                
                 players.stream()
                         .filter(player -> player.getGuess() == target)
                         .forEach(player -> System.out.println(player.getName() + " wins!"));
