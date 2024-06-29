@@ -3,15 +3,10 @@ package TacePao.GuessNumber;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Scanner;
 
 public class UserInterface {
-	private Scanner scanner;
 	private Random random = new Random();
 	
-	public UserInterface() {
-		scanner = new Scanner(System.in);
-	}
 	
 	public void start() {
 		List<Player> players = new ArrayList<>();
