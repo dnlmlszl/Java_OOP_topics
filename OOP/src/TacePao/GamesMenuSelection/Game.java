@@ -1,4 +1,4 @@
-package TacePao.GuessNumber;
+package TacePao.GamesMenuSelection;
 
 public abstract class Game {
 	public abstract void start();

@@ -1,4 +1,4 @@
-package TacePao.GuessNumber;
+package TacePao.GamesMenuSelection;
 
 import java.util.Random;
 

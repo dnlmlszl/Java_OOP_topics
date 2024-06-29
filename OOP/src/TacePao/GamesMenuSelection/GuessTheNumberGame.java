@@ -1,4 +1,4 @@
-package TacePao.GuessNumber;
+package TacePao.GamesMenuSelection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ public class GuessTheNumberGame extends Game{
 	
 	public void printGameName() {
         
-        System.out.println("This is the Guess the Number game.");
+        System.out.println("\nThis is the Guess the Number game.");
     }
 
 	private void menuLoop(List<Player> players, int target, boolean winner) {

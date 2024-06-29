@@ -1,4 +1,4 @@
-package TacePao.GuessNumber;
+package TacePao.GamesMenuSelection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,8 +40,7 @@ public class GameMain {
     			}
             } catch (NumberFormatException e) {
                 System.out.println("Érvénytelen bemenet! Kérlek, adj meg egy számot.");
-            }
-			
+            }		
 			
 		}
 	}

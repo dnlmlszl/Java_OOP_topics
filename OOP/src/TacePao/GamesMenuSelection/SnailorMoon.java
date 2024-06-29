@@ -1,4 +1,4 @@
-package TacePao.GuessNumber;
+package TacePao.GamesMenuSelection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,7 +85,7 @@ public class SnailorMoon extends Game{
 	
 	public void printGameName() {
         
-        System.out.println("Welcome to the Snailer Moon snail race!");
+        System.out.println("\nWelcome to the Snailer Moon snail race!");
     }
 
 }
