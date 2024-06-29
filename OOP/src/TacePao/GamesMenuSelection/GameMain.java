@@ -39,7 +39,7 @@ public class GameMain {
     				continue;
     			}
             } catch (NumberFormatException e) {
-                System.out.println("Érvénytelen bemenet! Kérlek, adj meg egy számot.");
+                System.out.println("Invalid input, please select a valid one.");
             }		
 			
 		}
