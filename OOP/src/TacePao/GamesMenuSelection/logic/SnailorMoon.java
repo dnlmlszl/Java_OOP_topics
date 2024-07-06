@@ -2,12 +2,15 @@ package TacePao.GamesMenuSelection.logic;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 import TacePao.GamesMenuSelection.domain.BetMan;
 import TacePao.GamesMenuSelection.domain.Game;
 import TacePao.GamesMenuSelection.domain.Snail;
 
 public class SnailorMoon extends Game{
+	private Random random = new Random();
 	
 	public void start() {
 		printGameName();
@@ -20,36 +23,37 @@ public class SnailorMoon extends Game{
 		betmen.forEach(betMan -> System.out.println(betMan.getName() + " bets on snail " + betMan.getGuess()));
         System.out.println();
 		
-		int distance = 25;
+		int distance = 100;
 		boolean isWinner = false;
-		boolean isWinnerFound = false;
 		int round = 1;
 		
 		while (!isWinner) {
             System.out.printf("Round %d:\n", round);
+            
+            if (random.nextInt(100) < 20) { 
+                Snail luckySnail = snails.get(random.nextInt(snails.size()));
+                luckySnail.boostSpeed();
+            } 
 
             snails.forEach(Snail::move);
             snails.forEach(System.out::println);
 
             List<Snail> winners = snails.stream()
                     .filter(snail -> snail.getPosition() >= distance)
-                    .toList();
-            
+                    .collect(Collectors.toList());
+
             if (!winners.isEmpty()) {
                 isWinner = true;
                 System.out.println("Winners:");
                 winners.forEach(winner -> System.out.println(winner.getName() + " wins!"));
+
+                for (BetMan betMan : betmen) {
+                    if (winners.stream().anyMatch(snail -> betMan.getGuess() == snails.indexOf(snail) + 1)) {
+                        System.out.println(betMan.getName() + " guessed correctly!");
+                    }
+                }
             } else {
                 System.out.println("No winners this round.");
-            }
-
-            for (BetMan betMan : betmen) {
-                if (winners.stream().anyMatch(snail -> betMan.getGuess() == snails.indexOf(snail) + 1)) {
-                    System.out.println(betMan.getName() + " guessed correctly!");
-                    
-                    isWinnerFound = true;
-                    break;
-                }
             }
 
             
