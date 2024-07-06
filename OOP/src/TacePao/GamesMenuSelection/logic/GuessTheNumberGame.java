@@ -1,8 +1,11 @@
-package TacePao.GamesMenuSelection;
+package TacePao.GamesMenuSelection.logic;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+import TacePao.GamesMenuSelection.domain.Game;
+import TacePao.GamesMenuSelection.domain.Player;
 
 public class GuessTheNumberGame extends Game{
 	private Random random = new Random();

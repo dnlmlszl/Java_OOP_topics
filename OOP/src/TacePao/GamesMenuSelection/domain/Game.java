@@ -1,4 +1,4 @@
-package TacePao.GamesMenuSelection;
+package TacePao.GamesMenuSelection.domain;
 
 public abstract class Game {
 	public abstract void start();

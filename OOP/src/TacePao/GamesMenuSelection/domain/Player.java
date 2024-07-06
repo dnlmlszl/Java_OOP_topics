@@ -1,4 +1,4 @@
-package TacePao.GamesMenuSelection;
+package TacePao.GamesMenuSelection.domain;
 
 import java.util.Random;
 

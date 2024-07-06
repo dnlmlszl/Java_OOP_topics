@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import TacePao.GamesMenuSelection.domain.Game;
+import TacePao.GamesMenuSelection.logic.GuessTheNumberGame;
+import TacePao.GamesMenuSelection.logic.SnailorMoon;
+
 public class GameMain {
 	static Scanner scanner = new Scanner(System.in);
 

@@ -1,7 +1,11 @@
-package TacePao.GamesMenuSelection;
+package TacePao.GamesMenuSelection.logic;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import TacePao.GamesMenuSelection.domain.BetMan;
+import TacePao.GamesMenuSelection.domain.Game;
+import TacePao.GamesMenuSelection.domain.Snail;
 
 public class SnailorMoon extends Game{
 	
