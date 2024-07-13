@@ -14,6 +14,13 @@ public class TriangleMain {
 		System.out.println("Triangle 1:");
 		triangle1.printPerimeter();
 		
+		triangle1.setSideA(6);
+		triangle1.setSideB(19);
+		triangle1.setSideC(14);
+		
+		System.out.println("Triangle 1 after reset:");
+		triangle1.printPerimeter();
+		
 		Triangle triangle2 = new Triangle(1, 1, 10);
         System.out.println("Triangle 2:");
         triangle2.printPerimeter(); 
