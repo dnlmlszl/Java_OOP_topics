@@ -1,0 +1,86 @@
+# Autos Applikacio UML es kepernyo tervek
+
+##UML
+
+----------------------------------
+|            Auto                |
+----------------------------------
+| - üzemanyagMennyiseg: int      |
+| - beinditva: boolean           |
+----------------------------------
+| + tankol(mennyiseg: int): void |
+| + indit(): void                |
+| + allit(): void                |
+| + megy(): void                 |
+----------------------------------
+
+## Kepernyo terv
+-----------------------------------------------
+|                Autó Műveletek               |
+-----------------------------------------------
+|                                             |
+| Üzemanyag mennyisége: [            ] liter  |
+|                                             |
+| [Tankolás]            [Indítás]             |
+|                                             |
+| [Leállítás]           [Autó megy]           |
+|                                             |
+-----------------------------------------------
+
+###################################################
+
+# Bovitett valtozat
+
+## Bovitett UML
+
+-----------------------------------------
+|            Auto                       |
+-----------------------------------------
+| - autoId: String                      |
+| - üzemanyagMennyiseg: int             |
+| - beinditva: boolean                  |
+| - modellSzam: String                  | 
+| - tulajdonsagok:       String[]       |
+| - sebesseg: int                       |
+| - maxUzemanyagMennyiseg: int          |
+| - atlagFogyasztas: float              |
+| - allapot: String                     |
+-----------------------------------------
+| + tankol(mennyiseg: int): void        |
+| + indit(): void                       |
+| + allit(): void                       |
+| + megy(): void                        |
+| + extrakPrint(array: String[]): void  |
+| + novelesSebesseg(): void             |
+| + csokkentesSebesseg(): void          |
+| + kezelFenyek(): void                 |
+| + kezelKlima(allapot: boolean): void  |
+| + szervizel(): void                   |
+| + tavolsagMerese(ido: int): int       |
+| + atlagosUzemanyagFogyasztas(): float |
+-----------------------------------------
+
+## Bovitett kepernyo terv
+
+-------------------------------------------------
+|                Autó Műveletek                 |
+-------------------------------------------------
+| Modellszám:           [            ]          |
+| Járműszám:            [            ]          |
+| Sebesség:             [            ] km/h     |
+| Állapot:              [            ]          |
+| Maximum üzemanyag:    [            ] liter    |
+| Atlag fogyasztas:     [            ] liter    |
+| Üzemanyag mennyisége: [            ] liter    | 
+|                                               |
+| [Tankolás]            [Indítás]               |
+|                                               |
+| [Leállítás]           [Autó megy]             |
+|                                               |
+| [Sebesség növelése]   [Sebesség csökkentése]  |
+|                                               |
+| [Fények kezelése]     [Klíma kezelése]        |
+|                                               |
+| [Szervizelés]         [Üzemanyag-fogyasztás]  |
+-------------------------------------------------
+

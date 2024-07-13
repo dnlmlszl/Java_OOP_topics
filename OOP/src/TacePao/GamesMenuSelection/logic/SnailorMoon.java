@@ -23,7 +23,7 @@ public class SnailorMoon extends Game{
 		betmen.forEach(betMan -> System.out.println(betMan.getName() + " bets on snail " + betMan.getGuess()));
         System.out.println();
 		
-		int distance = 100;
+		int distance = 50;
 		boolean isWinner = false;
 		int round = 1;
 		
@@ -54,9 +54,7 @@ public class SnailorMoon extends Game{
                 }
             } else {
                 System.out.println("No winners this round.");
-            }
-
-            
+            }            
 
             round++;
         }
