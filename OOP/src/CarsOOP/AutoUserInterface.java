@@ -6,18 +6,17 @@ public class AutoUserInterface {
     private Car car;
     private Scanner scanner;
 
-    public AutoUserInterface() {
+    public AutoUserInterface(Scanner scanner) {
         this.car = new Car();
-        this.scanner = new Scanner(System.in);
+        this.scanner = scanner;
     }
 
     public void run() {
         boolean quit = false;
         while (!quit) {
             printMenu();
-            int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
-
+            int choice = Integer.parseInt(scanner.nextLine());
+             
             switch (choice) {
                 case 1:
                     tankolasMenu();
@@ -43,18 +42,18 @@ public class AutoUserInterface {
     }
 
     private void printMenu() {
-        System.out.println("----------- Autó kezelése -----------");
+        System.out.println("\n----------- Autó kezelése -----------");
         System.out.println("1. Tankolás");
         System.out.println("2. Indítás");
         System.out.println("3. Leállítás");
-        System.out.println("4. Menet közbeni műveletek");
+        System.out.println("4. Menet műveletek");
         System.out.println("5. Kilépés");
         System.out.print("Válasszon: ");
     }
 
     private void tankolasMenu() {
         System.out.print("Mennyi üzemanyagot tankoljon? ");
-        int mennyiseg = scanner.nextInt();
+        int mennyiseg = Integer.parseInt(scanner.nextLine());
         car.tankol(mennyiseg);
     }
 

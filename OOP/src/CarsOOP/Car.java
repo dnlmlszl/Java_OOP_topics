@@ -32,7 +32,7 @@ public class Car {
                 this.beinditva = true;
                 System.out.println("Az autó el lett indítva.");
             } else {
-                System.out.println("Nincs üzemanyag, nem lehet indítani.");
+                System.out.println("Nincs üzemanyag, nem lehet elindítani.");
             }
         } else {
             System.out.println("Az autó már el lett indítva.");
