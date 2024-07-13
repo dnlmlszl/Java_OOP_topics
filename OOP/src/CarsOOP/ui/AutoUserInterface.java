@@ -1,6 +1,8 @@
-package CarsOOP;
+package CarsOOP.ui;
 
 import java.util.Scanner;
+
+import CarsOOP.model.Car;
 
 public class AutoUserInterface {
     private Car car;
@@ -38,7 +40,6 @@ public class AutoUserInterface {
             }
         }
         System.out.println("Program vége.");
-        scanner.close();
     }
 
     private void printMenu() {
@@ -52,21 +53,26 @@ public class AutoUserInterface {
     }
 
     private void tankolasMenu() {
+    	System.out.println(car);
         System.out.print("Mennyi üzemanyagot tankoljon? ");
         int mennyiseg = Integer.parseInt(scanner.nextLine());
         car.tankol(mennyiseg);
+        System.out.println(car);
     }
 
     private void inditasMenu() {
         car.indit();
+        System.out.println(car);
     }
 
     private void leallitasMenu() {
         car.leallit();
+        System.out.println(car);
     }
 
     private void megyMenu() {
         car.megy();
+        System.out.println(car);
     }
 
 }

@@ -1,0 +1,16 @@
+# UML
+
+--------------------------------------
+|             Triangle               |
+--------------------------------------
+| - side1: double                    |
+| - side2: double                    |
+| - side3: double                    |
+--------------------------------------
+| + Triangle(sideA: double,          |
+|             sideB: double,         |
+|             sideC: double)         |
+| + calculatePerimeter(): double     |
+| + printPerimeter(): void           |
+| - isValidTriangle(): boolean       |
+--------------------------------------

@@ -1,6 +1,6 @@
-package CarsOOP;
+package CarsOOP.model;
 
-public class Car {
+public class Car implements CarInterface{
     private int uzemanyag;
     private boolean beinditva;
 
@@ -9,14 +9,17 @@ public class Car {
         this.uzemanyag = 0; 
     }
 
+    @Override
     public int getUzemanyag() {
         return uzemanyag;
     }
 
+    @Override
     public boolean getBeinditva() {
         return beinditva;
     }
 
+    @Override
     public void tankol(int mennyiseg) {
         if (!beinditva) {
             this.uzemanyag += mennyiseg;
@@ -26,6 +29,7 @@ public class Car {
         }
     }
 
+    @Override
     public void indit() {
         if (!beinditva) {
             if (uzemanyag > 0) {
@@ -39,6 +43,7 @@ public class Car {
         }
     }
 
+    @Override
     public void leallit() {
         if (beinditva) {
             this.beinditva = false;
@@ -48,6 +53,7 @@ public class Car {
         }
     }
 
+    @Override
     public void megy() {
         if (beinditva) {
             while (uzemanyag > 0) {
@@ -59,4 +65,14 @@ public class Car {
             System.out.println("Az autó nincs beindítva, indítsa el először.");
         }
     }
+    
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Autó állapota:\n");
+        sb.append("Üzemanyag mennyisége: ").append(uzemanyag).append(" liter\n");
+        sb.append("Beindítva: ").append(beinditva ? "Igen" : "Nem").append("\n");
+        return sb.toString();
+    }
+
 }
